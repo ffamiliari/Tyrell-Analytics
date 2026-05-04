@@ -1,6 +1,3 @@
-# Tyrell-Analytics
-Tyrell Analytics Demo platform
-
 # Tyrell Analytics – Customer Insights Platform
 
 ## Overview
