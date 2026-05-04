@@ -1,0 +1,13 @@
+-- Purpose: Load CSV files from Snowflake stage into raw tables
+
+COPY INTO CUSTOMERS
+FROM @MY_STAGE/customers.csv
+FILE_FORMAT = (TYPE = CSV SKIP_HEADER = 1);
+
+COPY INTO USAGE
+FROM @MY_STAGE/usage.csv
+FILE_FORMAT = (TYPE = CSV SKIP_HEADER = 1);
+
+COPY INTO BILLING
+FROM @MY_STAGE/billing.csv
+FILE_FORMAT = (TYPE = CSV SKIP_HEADER = 1);
